@@ -1,0 +1,22 @@
+<xml>
+	<files id='haxe'>
+		<compilervalue name="-I" value="${haxelib:hxminiaudio}/" />
+		<compilervalue name="-I" value="${haxelib:hxminiaudio}/include" />
+	</files>
+
+	<target id='haxe' tool='linker' toolid='exe' if='windows'> 
+	   <!--windows 64 bit-->
+		<lib name='${haxelib:hxminiaudio}/Windows64/libogg.lib' if='HXCPP_M64' />
+		<lib name='${haxelib:hxminiaudio}/Windows64/opus.lib' if='HXCPP_M64' />
+		<lib name='${haxelib:hxminiaudio}/Windows64/opusfile.lib' if='HXCPP_M64' /> 
+		<!--Windows 32 bit-->
+		<lib name='${haxelib:hxminiaudio}/Windows32/libogg.lib' if='HXCPP_M32' />
+		<lib name='${haxelib:hxminiaudio}/Windows32/opus.lib' if='HXCPP_M32' />
+		<lib name='${haxelib:hxminiaudio}/Windows32/opusfile.lib' if='HXCPP_M32' />
+	</target> 
+	<target id='haxe' tool='linker' if='mac'>
+		<lib name='${haxelib:hxminiaudio}/Mac64/libogg.a' if='HXCPP_M64' />
+		<lib name='${haxelib:hxminiaudio}/Mac64/libopus.a' if='HXCPP_M64' />
+		<lib name='${haxelib:hxminiaudio}/Mac64/libopusfile.a' if='HXCPP_M64' />
+	</target>
+</xml>

@@ -1,0 +1,21 @@
+{
+	"name": "hxminiaudio",
+	"url": "https://github.com/polybiusproxy/hxCodec",
+	"license": "MIT",
+	"tags": [
+		"vlc",
+		"audio",
+		"haxeflixel",
+		"openfl",
+		"windows",
+		"mac",
+		"linux",
+		"android"
+	],
+	"description": "Native video support for HaxeFlixel & OpenFL & Lime",
+	"version": "1.0.0",
+	"releasenote": "audio support",
+	"contributors": [
+		"McJonnycat"
+	]
+}
