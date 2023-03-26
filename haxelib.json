@@ -1,9 +1,9 @@
 {
 	"name": "hxminiaudio",
-	"url": "https://github.com/polybiusproxy/hxCodec",
+	"url": "https://github.com/JonnycatMeow/hxminiaudio",
 	"license": "MIT",
 	"tags": [
-		"vlc",
+		"miniaudio",
 		"audio",
 		"haxeflixel",
 		"openfl",
