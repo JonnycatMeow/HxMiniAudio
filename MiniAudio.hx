@@ -1,3 +1,4 @@
+package; 
 import cpp.ConstCharStar;
 import cpp.RawPointer;
 
